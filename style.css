@@ -18,9 +18,9 @@ body {
 }
 
 .name {
-    display:block;
+    display: block;
     position: relative;
-    margin-bottom:50px;
+    margin: 55px 0px;
 }
 
 .name:after {
@@ -53,7 +53,7 @@ body {
 
 .name span {
     font-size:150px;
-    line-height:110px;
+    line-height:115px;
     font-weight: bold;
     display: table;
 }
@@ -71,7 +71,7 @@ body {
 
   
 .wrapper .center {
-    width:1140px;
+    width:60%;
 }
 
 .wrapper a {
@@ -85,16 +85,13 @@ body {
 .row {
     display: flex;
 }
-  
-.column {
-    flex: 50%;
-}
-
+ 
 .text {
     color: #616161;
     font-size: 19px;
     text-align: justify;
     padding-left:100px;
+    margin-top: 105px;
 }
 
 .wrapper a {
@@ -119,5 +116,11 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    
+    .row {
+        flex-direction: column;
+    }
+
+    .text {
+        padding-left:0;
+    }
 }
