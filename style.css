@@ -1,0 +1,125 @@
+html, body {
+    height: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color:#000;
+    color:#fff;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.icon {
+    max-width:13px;
+    margin-left:5px;
+}
+
+
+.name {
+    display:block;
+    position: relative;
+    margin-bottom:50px;
+}
+
+.name:after {
+    content:"";
+    width:20%;
+    height:3px;
+    background-color:#616161;
+    position: absolute;
+    top:-30px;
+    left: 0px;
+}
+
+.about {
+    font-size: 30px;
+    font-weight: lighter;
+    line-height: 26px;
+    margin-bottom: 35px;
+    color: #616161;
+}
+
+.name:before {
+    content:"";
+    width:20%;
+    height:3px;
+    background-color:#616161;
+    position: absolute;
+    bottom:-30px;
+    right: 0;
+}
+
+.name span {
+    font-size:150px;
+    line-height:110px;
+    font-weight: bold;
+    display: table;
+}
+
+.teste {
+    position: absolute;
+    left:0;
+    top:0;
+}
+
+.wrapper {
+    height: 100%;
+    min-height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+  
+.wrapper .center {
+    width:1140px;
+}
+
+.wrapper a {
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right:20px;
+}
+
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 50%;
+}
+
+.text {
+    padding-left: 100px;
+    color: #616161;
+    font-size: 19px;
+}
+
+.wrapper a {
+    display: inline-block;
+}
+
+.wrapper a:hover {
+    color:#717171;
+}
+
+.wrapper a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #717171;
+    transition: width .4s;
+}
+
+.wrapper a:hover::after {
+    width: 100%;
+}
