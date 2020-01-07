@@ -7,7 +7,7 @@ html, body {
 body {
     padding: 0;
     margin: 0;
-    background-color:#000;
+    background-color:#0a0a0a;
     color:#fff;
     font-family: 'Titillium Web', sans-serif;
 }
@@ -18,44 +18,17 @@ body {
 }
 
 .name {
-    display: block;
-    position: relative;
-    margin: 55px 0px;
-}
-
-.name:after {
-    content:"";
-    width:20%;
-    height:3px;
-    background-color:#616161;
-    position: absolute;
-    top:-30px;
-    left: 0px;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 26px;
+    color: #00ee8b;
+    margin-top: 20px;
 }
 
 .about {
+    color:#616161;
     font-size: 30px;
     font-weight: lighter;
-    line-height: 26px;
-    margin-bottom: 35px;
-    color: #616161;
-}
-
-.name:before {
-    content:"";
-    width:20%;
-    height:3px;
-    background-color:#616161;
-    position: absolute;
-    bottom:-30px;
-    right: 0;
-}
-
-.name span {
-    font-size:150px;
-    line-height:115px;
-    font-weight: bold;
-    display: table;
 }
 
 .wrapper {
@@ -69,7 +42,20 @@ body {
     justify-content: center;
 }
 
-  
+#profile_image {
+    display: block;
+    position: relative;
+}
+
+#profile_image::before {
+    content:"";
+    width:100px;
+    height:100px;
+    position: absolute;
+    background: #f0f0f0;
+    bottom: 0;
+}
+ 
 .wrapper .center {
     width:60%;
 }
@@ -85,14 +71,34 @@ body {
 .row {
     display: flex;
 }
- 
-.text {
-    color: #616161;
-    font-size: 19px;
-    text-align: justify;
-    padding-left:100px;
-    margin-top: 105px;
+
+.profile {
+    position: relative;
+    z-index: -1;
 }
+
+.profile:before {
+    content: "";
+    position: absolute;
+    left: 12px;
+    width: 250px;
+    height: 250px;
+    bottom: 12px;
+    z-index: 2;
+    border: 1px solid #fff;
+}
+
+.profile:after {
+    content: "";
+    position: absolute;
+    left: -60px;
+    width: 600px;
+    height: 600px;
+    top: -60px;
+    z-index: 1;
+    border: 1px solid #212121;
+}
+
 
 .wrapper a {
     display: inline-block;
@@ -109,6 +115,12 @@ body {
     height: 2px;
     background: #717171;
     transition: width .4s;
+}
+
+.text {
+    margin-top:20px;
+    padding-left: 0;
+    color: #616161;
 }
 
 .wrapper a:hover::after {
